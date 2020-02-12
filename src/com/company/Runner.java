@@ -1,24 +1,27 @@
 package com.company;
 
 public class Runner extends Thread {
-    String nextRunner;
 
-
-    public Runner(String nextRunner) {
-        this.nextRunner = nextRunner;
-
-
+    @Override
+    public void run() {
+        try {
+            System.out.println(" На старт, внимание марш!!!");
+            for (int i = 1; i < 5; i++) {
+                int next = i + 1;
+                System.out.println("Runner " + i + " Берёт палочку и бежит к Runner " + next);
+                                sleep(1000);
+            }
+                System.out.println("Runner 5 берет палочку бежит к финишу");
+            sleep(1000);
+                for (int i = 5; i > 1; i--) {
+                    int previous = i -1;
+                    System.out.println("Runner " + i + " Берёт палочку и бежит к Runner " + previous);
+                    sleep(1000);
+                }
+            System.out.println("Финиш!!!");
+        } catch (Exception m) {
+                System.out.println(m.getLocalizedMessage());
+            }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 
