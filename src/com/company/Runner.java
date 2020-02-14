@@ -11,9 +11,11 @@ public class Runner extends Thread {
                 System.out.println("Runner " + i + " Берёт палочку и бежит к Runner " + next);
                                 sleep(1000);
             }
-                System.out.println("Runner 5 берет палочку бежит к финишу");
+                System.out.println("Runner 5 берет палочку бежит к финишу" );
+                        sleep(1000);
+            System.out.println("Runner 5 бежит к Runner 4");
             sleep(1000);
-                for (int i = 5; i > 1; i--) {
+                for (int i = 4; i > 1; i--) {
                     int previous = i -1;
                     System.out.println("Runner " + i + " Берёт палочку и бежит к Runner " + previous);
                     sleep(1000);
