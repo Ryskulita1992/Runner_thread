@@ -3,42 +3,24 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println(" На старт, внимание марш!!!");
 
-        Runner First=new Runner();
+        RunnerSec First = new RunnerSec(1);
         First.start();
         try {
             First.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Runner Second=new Runner();
+        RunnerSec Second = new RunnerSec(2);
         Second.start();
-        try {
-            Second.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Runner Third=new Runner();
+        RunnerSec Third = new RunnerSec(3);
         Third.start();
-        try {
-            Third.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        Runner Fourth=new Runner();
+        RunnerSec Fourth = new RunnerSec(4);
         Fourth.start();
-        try {
-            Fourth.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        Runner Fifth=new Runner();
-        Fifth.start();
+        RunnerSec Fifth = new RunnerSec(5);
 
 
+    }
+}
 
-
-    }}
-//
