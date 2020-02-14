@@ -13,6 +13,8 @@
 //            }
 //                System.out.println("Runner 5 берет палочку бежит к финишу" );
 //                        sleep(1000);
+
+
 //            System.out.println("Runner 5 бежит к Runner 4");
 //            sleep(1000);
 //                for (int i = 4; i > 1; i--) {
